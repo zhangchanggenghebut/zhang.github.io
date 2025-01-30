@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About Me and My group"
+title: ""
 css: ["about.css", "animate.css", "morphext.css"]
 js: ["morphext.min.js", "about.js"]
 ---
