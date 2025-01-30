@@ -64,11 +64,11 @@ css: ["index.css"]
 </body>
 
 
-
+<!--
     
  <body>    
 <h4>Research Interests</h4>
-<br>engineering electromagnetic field application, <br/>
+<br>engineering electromagnetic field application <br/>
 <br>magnetic property measurement<br/>
 <br>modeling of magnetic materials<br/>
  <br>SMC materials manufacturing<br/>
@@ -102,6 +102,86 @@ css: ["index.css"]
     </dl>
 
 </body>
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience and Research</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #333; /* Darker heading color */
+        }
+        dl {
+            margin-top: 15px; /* Add some space above the list */
+        }
+        dt {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        dd {
+            margin-left: 20px; /* Indent the descriptions */
+            margin-bottom: 15px; /* Space between list items */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h4>Research Interests</h4>
+    <ul>  <!-- Use a list for better semantics -->
+        <li>Engineering electromagnetic field application</li>
+        <li>Magnetic property measurement</li>
+        <li>Modeling of magnetic materials</li>
+        <li>SMC materials manufacturing</li>
+    </ul>
+
+
+    <h4>Working Experience</h4>
+    <dl>
+        <dt>April 2025 - Present</dt>
+        <dd>Rotating Rector, Hebei University of Technology (Finland)</dd>
+
+        <dt>April 2024 - Present</dt>
+        <dd>Deputy Director, International Exchange and Cooperation Office</dd>
+
+        <dt>February 2022 - Present</dt>
+        <dd>Vice Director of Electromagnetic Technology Institute, Hebei University of Technology</dd>
+
+        <dt>March 2017 - Present</dt>
+        <dd>Professor, Lecturer, Associate Professor, Ph.D. Advisor, Hebei University of Technology</dd>
+
+        <dt>January 2023 - June 2023</dt>
+        <dd>Instructor, LUT University, Finland</dd>
+
+        <dt>December 2018 - December 2019</dt>
+        <dd>Postdoctoral Researcher in Electrical Engineering, The Ohio State University, United States</dd>
+    </dl>
+</body>
+
+
+
+
+
+
+
+
+
+
 
 <div class="row">
   {% for post in paginator.posts %}
