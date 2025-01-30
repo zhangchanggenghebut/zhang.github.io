@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "恭喜孙长兴同学博士答辩"
+title:  "Sun Changxing PHD Defence"
 date:   2022-12-15 01:30:13 +0800
 categories: Default
-tags: defence Sun 博士答辩
+tags: defence Sun 
 comments: 1
 ---
-#### 河北工业大学电气工程学院答辩会
+#### Hebei university of Technology PHD Defence
 
 * 答 辩 人： 孙长兴
 * 题    目： 基于层状磁电复合材料的磁电器件及其应用研究
