@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "岳帅超同学博士预答辩"
+title:  "Yue Shuaichao PHD Defence"
 date:   2022-12-17 01:30:13 +0800
 categories: Default
-tags: defence Yue 博士答辩
+tags: defence Yue 
 comments: 1
 ---
-#### 河北工业大学电气工程预答辩会
+#### Hebei university of Technology PHD Defence
 
   **答 辩 人：  岳帅超**
   
