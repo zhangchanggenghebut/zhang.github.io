@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "activities"
+title: "Activities"
 css: ["teaching.css", "animate.css", "morphext.css"]
 js: ["morphext.min.js", "about.js"]
 ---
