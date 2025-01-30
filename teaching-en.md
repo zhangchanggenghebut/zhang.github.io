@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Teaching  教学"
+title: "Teaching"
 css: ["teaching-en.css", "animate.css", "morphext.css"]
 js: ["morphext.min.js", "about.js"]
 ---
