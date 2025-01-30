@@ -12,7 +12,94 @@
       <br> Email：changgeng.zhang#hebut.edu.cn   <br/>          
     </p>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #343a40; /* Dark gray text */
+        }
 
+        .user-profile {
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 50px; /* Add some top margin */
+        }
+
+        .user-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #6c757d; /* Add a subtle border */
+        }
+
+        .user-pic img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+
+        h4 {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        #js-rotating {
+            font-style: italic;
+            color: #007bff; /* Blue color for rotating text */
+            display: block; /* Ensure it takes up full width */
+            animation: rotateWords 8s linear infinite; /* Increased animation duration */
+        }
+
+        @keyframes rotateWords {
+            0% { content: "So Simple"; }
+            25% { content: "Very Doge"; }
+            50% { content: "Much Wow"; }
+            75% { content: "Such Cool"; }
+            100% { content: "So Simple"; }
+        }
+
+
+        .user-content p {
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .user-content a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .user-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .user-pic img {
+                width: 120px;
+                height: 120px;
+            }
+            .user-profile {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
 
 <body>
     <div class="user-profile">
