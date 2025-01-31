@@ -2,7 +2,7 @@
 layout: post
 title:  "Sun Changxing PHD Defence"
 date:   2022-12-15 01:30:13 +0800
-categories: Default
+categories: Activity
 tags: defence Sun 
 comments: 1
 ---
