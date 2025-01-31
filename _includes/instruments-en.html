@@ -1,5 +1,5 @@
-<div class="col s12 cat-div">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1200px; /* Wider container */
             margin: 0 auto;
             background-color: #fff;
             padding: 20px;
@@ -39,26 +39,26 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
+            table-layout: fixed; /* For better column width control */
         }
 
         th, td {
-            padding: 8px;
+            padding: 12px; /* Increased padding */
             border: 1px solid #ddd;
             text-align: left;
+            word-wrap: break-word; /* Allow text to wrap within cells */
         }
 
         th {
             background-color: #f0f0f0;
         }
 
-        /* Responsive design for smaller screens */
-        @media (max-width: 600px) {
+        /* Responsive design - Adjust as needed for smaller screens */
+        @media (max-width: 992px) {
             .container {
-                padding: 10px;
+                max-width: 90%; /* Adjust for smaller screens */
+                padding: 15px;
             }
-            h1 { font-size: 1.5em; }
-            h2 { font-size: 1.2em; }
-            table { font-size: 0.9em; }
         }
     </style>
 </head>
@@ -72,13 +72,13 @@
         <table>
             <thead>
                 <tr>
-                    <th>Instrument Name</th>
-                    <th>Country of Origin</th>
-                    <th>Sample Shape</th>
-                    <th>Sample Size</th>
-                    <th>Sample Type</th>
+                    <th style="width: 25%;">Instrument Name</th>
+                    <th style="width: 15%;">Country of Origin</th>
+                    <th style="width: 15%;">Sample Shape</th>
+                    <th style="width: 15%;">Sample Size</th>
+                    <th style="width: 15%;">Sample Type</th>
                     <th>Service Deliverables</th>
-                    <th>Charge (RMB)</th>
+                    <th style="width: 10%;">Charge (RMB)</th>
                 </tr>
             </thead>
             <tbody>
@@ -113,3 +113,4 @@
         </table>
     </div>
 </body>
+</html>
