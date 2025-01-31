@@ -1,4 +1,11 @@
-
+---
+layout: post
+title:  "New Published Paper in AIP advance"
+date:   2025-1-10 01:30:13 +0800
+categories: Papers
+tags: Zhang Haitao
+comments: 1
+---
 
 
 
