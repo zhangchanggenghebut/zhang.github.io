@@ -2,7 +2,7 @@
 layout: post
 title:  "New Published Paper in Journal of Alloys and Compounds"
 date:   2025-1-05 01:30:13 +0800
-categories: Default
+categories: Papers
 tags: Guo Ziran 
 comments: 1
 ---
