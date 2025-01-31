@@ -2,7 +2,7 @@
 layout: post
 title:  "Yue Shuaichao PHD Defence"
 date:   2022-12-17 01:30:13 +0800
-categories: Default
+categories: Activity
 tags: defence Yue 
 comments: 1
 ---
