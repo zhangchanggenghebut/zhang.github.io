@@ -48,7 +48,7 @@
         }
 
         /* Responsive adjustments for smaller screens */
-        @media (max-width: 600px) {
+        @media (max-width: 1200px) {
             .user-profile {
                 flex-direction: column; /* Stack image and content vertically */
                 align-items: center; /* Center content horizontally */
@@ -84,96 +84,134 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 1000px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px;
             line-height: 1.6;
             color: #333;
+            background-color: #f5f6fa;
         }
         
         .header {
-            background: linear-gradient(to right, #2c3e50, #3498db);
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 30px;
+            padding: 30px 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            margin-bottom: 20px;
         }
         
         .interests {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 15px;
         }
         
         .interest-tag {
-            background: #e1f5fe;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            color: #0277bd;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1em;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.3);
         }
         
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
         }
         
         h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
+            color: #1e3c72;
+            font-size: 1.8em;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 15px;
+            margin-top: 0;
         }
         
         .students-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
         }
         
         .student {
-            padding: 15px;
+            padding: 20px 25px;
             background-color: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #3498db;
-            transition: transform 0.2s;
+            border-radius: 10px;
+            border-left: 5px solid #2a5298;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
         
         .student:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        
+        .student-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
         .student-name {
             font-weight: bold;
-            color: #2980b9;
-            font-size: 1.1em;
+            color: #1e3c72;
+            font-size: 1.2em;
         }
         
         .year {
-            color: #7f8c8d;
+            color: #666;
             font-style: italic;
             font-size: 0.9em;
+            background: #e9ecef;
+            padding: 4px 12px;
+            border-radius: 15px;
         }
         
         .dissertation {
-            margin-top: 8px;
-            color: #34495e;
-            font-size: 0.95em;
+            color: #444;
+            font-size: 1em;
+            line-height: 1.5;
+            padding-top: 8px;
+            border-top: 1px solid #eee;
         }
         
         .status-active {
-            background-color: #e8f5e9;
-            border-left-color: #4caf50;
+            background-color: #f0f7ff;
+            border-left-color: #2a5298;
         }
         
         .status-completed {
-            background-color: #f5f5f5;
-            border-left-color: #9e9e9e;
+            background-color: #f8f9fa;
+            border-left-color: #6c757d;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            
+            .students-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -192,32 +230,42 @@
         <h2>PhD/D.Phil Students</h2>
         <div class="students-grid">
             <div class="student status-active">
-                <div class="student-name">Yifan CHEN</div>
-                <div class="year">(2018-2025)</div>
+                <div class="student-header">
+                    <span class="student-name">Yifan CHEN</span>
+                    <span class="year">2018-2025</span>
+                </div>
                 <div class="dissertation">Neural Network of Electromagnetic Simulation</div>
             </div>
             
             <div class="student status-active">
-                <div class="student-name">Hao ZHANG</div>
-                <div class="year">(2019-2025)</div>
+                <div class="student-header">
+                    <span class="student-name">Hao ZHANG</span>
+                    <span class="year">2019-2025</span>
+                </div>
                 <div class="dissertation">Neural Network of Magnetic Properties of Soft Magnetic Materials</div>
             </div>
             
             <div class="student status-active">
-                <div class="student-name">Wenbin MENG</div>
-                <div class="year">(2020-2026)</div>
+                <div class="student-header">
+                    <span class="student-name">Wenbin MENG</span>
+                    <span class="year">2020-2026</span>
+                </div>
                 <div class="dissertation">[In Progress]</div>
             </div>
             
             <div class="student status-active">
-                <div class="student-name">Rawal Shahbaz</div>
-                <div class="year">(2022-2026)</div>
+                <div class="student-header">
+                    <span class="student-name">Rawal Shahbaz</span>
+                    <span class="year">2022-2026</span>
+                </div>
                 <div class="dissertation">[In Progress]</div>
             </div>
             
             <div class="student status-active">
-                <div class="student-name">Tao Chen</div>
-                <div class="year">(2023-2027)</div>
+                <div class="student-header">
+                    <span class="student-name">Tao Chen</span>
+                    <span class="year">2023-2027</span>
+                </div>
                 <div class="dissertation">[In Progress]</div>
             </div>
         </div>
@@ -226,49 +274,46 @@
     <div class="section">
         <h2>Master Students</h2>
         <div class="students-grid">
-            <!-- Completed Students -->
             <div class="student status-completed">
-                <div class="student-name">Xinxiao YAN</div>
-                <div class="year">(2017-2020)</div>
+                <div class="student-header">
+                    <span class="student-name">Xinxiao YAN</span>
+                    <span class="year">2017-2020</span>
+                </div>
                 <div class="dissertation">Electromagnetic and Thermal Field Coupled Modeling and Experimental Research in Dry-type Transformer</div>
             </div>
             
             <div class="student status-completed">
-                <div class="student-name">Lan YANG</div>
-                <div class="year">(2019-2022)</div>
+                <div class="student-header">
+                    <span class="student-name">Lan YANG</span>
+                    <span class="year">2019-2022</span>
+                </div>
                 <div class="dissertation">Measurement and Modeling of Magnetic Properties of Non-oriented Electrical Steels Considering the Effect of Punching</div>
             </div>
             
-            <!-- Current Students -->
             <div class="student status-active">
-                <div class="student-name">Yan ZHANG</div>
-                <div class="year">(2021-2024)</div>
-                <div class="dissertation">Meso-macro Magnetic Properties of Non-oriented Steel Affected by Laser Cutting</div>
-            </div>
-            
-            <div class="student status-active">
-                <div class="student-name">Xizheng LI</div>
-                <div class="year">(2021-2024)</div>
-                <div class="dissertation">Study on Magnetic Characteristics Testing of Electrical Steel Sheet Considering Stress Normal to Laminations</div>
-            </div>
-            
-            <div class="student status-active">
-                <div class="student-name">Ziran GUO</div>
-                <div class="year">(2023-2026)</div>
+                <div class="student-header">
+                    <span class="student-name">Ziran GUO</span>
+                    <span class="year">2023-2026</span>
+                </div>
                 <div class="dissertation">SMCs Material Manufacturing</div>
             </div>
             
             <div class="student status-active">
-                <div class="student-name">Kai WANG</div>
-                <div class="year">(2023-2026)</div>
+                <div class="student-header">
+                    <span class="student-name">Kai WANG</span>
+                    <span class="year">2023-2026</span>
+                </div>
                 <div class="dissertation">Fault Diagnosis of Power Transformer</div>
             </div>
             
             <div class="student status-active">
-                <div class="student-name">Guotao SUN</div>
-                <div class="year">(2023-2026)</div>
+                <div class="student-header">
+                    <span class="student-name">Guotao SUN</span>
+                    <span class="year">2023-2026</span>
+                </div>
                 <div class="dissertation">Rotational Magnetic Properties of Oriented Silicon Steel</div>
             </div>
         </div>
     </div>
 </body>
+
